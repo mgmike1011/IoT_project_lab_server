@@ -16,4 +16,4 @@ sense = SenseHat()
 
 for x in range(0,8):
     for y in range(0,8):
-        sense.set_pixel(x, y, 255, 255, 255)
+        sense.set_pixel(x, y, 0, 0, 0)
