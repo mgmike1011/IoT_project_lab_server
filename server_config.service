@@ -1,0 +1,13 @@
+[Unit]
+Description=Server startup config
+After=network.target
+
+[Service]
+ExecStart=/home/pi/server/IoT/StartServer.sh
+StandardOutput=inherit
+StandardError=inherit
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
